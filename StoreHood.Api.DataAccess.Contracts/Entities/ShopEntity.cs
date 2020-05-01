@@ -18,14 +18,16 @@ namespace StoreHood.Api.DataAccess.Contracts.Entities
         public string Mail { get; set; }
         public string Facebook { get; set; }
         public string Instagram { get; set; }
+
+        public int IdDealer { get; set; }
+        public int IdCalendary { get; set; }
         //Tendrá asociado un comerciante.
         public virtual DealerEntity Dealer { get; set; }
-        //Tendrá una lista de productos.
-        public virtual ICollection<ProductEntity> Products {get; set;}
-        //Tendrá una lista de categorias.
-        public virtual ICollection<CategoriesEntity> Categories { get; set; }        
         // Un calendario asociado de la provincia al que pertenezca
         public virtual CalendaryEntity Calendary { get; set; }
+        //Tendrá una lista de productos.
+        public virtual ICollection<ProductEntity> Products {get; set;}
+        
 
         // Campos de Auditoría.
         public string IpCreate { get; set; }

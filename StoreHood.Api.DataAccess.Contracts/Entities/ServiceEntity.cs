@@ -4,7 +4,7 @@ using System.Text;
 
 namespace StoreHood.Api.DataAccess.Contracts.Entities
 {
-    public class ProductEntity
+    public class ServiceEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -12,15 +12,12 @@ namespace StoreHood.Api.DataAccess.Contracts.Entities
         public string Desc2 { get; set; }
         public string Desc3 { get; set; }
         public string Desc4 { get; set; }        
-        public decimal Price { get; set; }
-        public double Weight { get; set; }
-        public bool Active { get; set; }
-        public string Size { get; set; }
-        public string Color { get; set; }
+        public decimal Price { get; set; }      
+        public bool Active { get; set; }       
         public decimal Discount { get; set; }
         public bool DiscountAvaible { get; set; }
         public byte[] Image { get; set; }
-        public virtual ShopEntity Shop { get; set; }
+        public virtual ActivityEntity Activity { get; set; }
         public virtual ICollection<CategoriesEntity> Categories { get; set; }
         public virtual ICollection<OpinionEntity> Opinions { get; set; }
 

@@ -23,12 +23,15 @@ namespace StoreHood.Api.DataAccess.Contracts.Entities
         public string Facebook { get; set; }
         public string Instagram { get; set; }
         
-
-        //Tendrá asociado un comerciante.
+        public int IdProfessional { get; set; }
+        public int IdCalendary { get; set; }
+        //Tendrá asociado un profesional.
         public virtual ProfessionalEntity Professional { get; set; }
-              
+        //Tendrá varios servicios a ofrecer.
+        public virtual ICollection<ServiceEntity> Services { get; set; }
+        public virtual ICollection<OpinionEntity> Opinions { get; set; }
         //Tendrá una lista de categorias.
-        public virtual ICollection<CategorieActEntity> Categories { get; set; }
+        public virtual ICollection<CategoriesEntity> Categories { get; set; }
         // Un calendario asociado de la provincia al que pertenezca
         public virtual CalendaryEntity Calendary { get; set; }
 
