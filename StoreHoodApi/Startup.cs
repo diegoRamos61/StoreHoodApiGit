@@ -28,13 +28,13 @@ namespace StoreHoodApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<StoreHoodDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SHDB")));
-
+            services.AddDbContext<StoreHoodDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("shdb")));
+          
             //Esta etiqueta siempre debe ser la última.
             services.AddControllers();
 
-            
         }
+      
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
