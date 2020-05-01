@@ -6,6 +6,7 @@ namespace StoreHood.Api.DataAccess.Contracts.Entities
 {
     public class OpinionEntity
     {
+        public int Id { get; set; }
         public string Description { get; set; }
         public int Rank { get; set; }
         public virtual UserEntity User { get; set; }

@@ -7,10 +7,11 @@ namespace StoreHood.Api.DataAccess.Contracts.Entities
     public class PromotionEntity
     {
         //Pendiente de analizar que campos harán falta.
-        public double AmountMin { get; set; }
-        public double AmountMax { get; set; }
-        public double DiscountMoney { get; set; }
-        public double DiscountPerc { get; set; }
+        public int Id { get; set; }
+        public decimal AmountMin { get; set; }
+        public decimal AmountMax { get; set; }
+        public decimal DiscountMoney { get; set; }
+        public decimal DiscountPerc { get; set; }
         public bool Active { get; set; }       
 
 

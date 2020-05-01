@@ -6,6 +6,7 @@ namespace StoreHood.Api.DataAccess.Contracts.Entities
 {
     public class CategorieActEntity
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         // Una Actividad profesional puede tener varias categorias, y alguna de ellas no activa por tanto no se mostraría. 
         // Por si fuera necesario actualizar la categoría y no se desease actualizar sino darla de baja y sustituirla por otra.

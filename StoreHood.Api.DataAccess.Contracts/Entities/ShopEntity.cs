@@ -6,6 +6,7 @@ namespace StoreHood.Api.DataAccess.Contracts.Entities
 {
     public class ShopEntity
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         //Info para google maps, dirección, latitud y longitud
         public string Address { get; set; }
