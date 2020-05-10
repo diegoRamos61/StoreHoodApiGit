@@ -13,11 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Mappers\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\StoreHood.Api.Business\StoreHood.Api.Business.csproj" />
     <ProjectReference Include="..\StoreHood.Api.DataAccess.Contracts\StoreHood.Api.DataAccess.Contracts.csproj" />
   </ItemGroup>
 

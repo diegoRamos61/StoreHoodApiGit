@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StoreHood.Api</name>
+    </assembly>
+    <members>
+        <member name="M:StoreHood.Api.Controllers.ActivityController.#ctor(StoreHood.Api.Application.Contracts.IActivityService)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="activityService"></param>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ActivityController.AddActivity(StoreHood.Api.ViewModels.ActivityModel)">
+            <summary>
+            Add new Activity
+            </summary>
+            <param name="activity"></param>
+            <returns>Activity</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ActivityController.DeleteActivity(System.Int32)">
+            <summary>
+            Delete Activity
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ActivityController.UpdateActivity(StoreHood.Api.ViewModels.ActivityModel)">
+            <summary>
+            Update Activity
+            </summary>
+            <param name="Activity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ActivityController.GetActivityAll">
+            <summary>
+            Get All Activitys
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ActivityController.GetActivity(System.Int32)">
+            <summary>
+            Get USER by ID.
+            </summary>
+            <param name="id"></param>
+            <returns>Activity</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.CalendaryController.#ctor(StoreHood.Api.Application.Contracts.ICalendaryService)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="calendaryService"></param>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.CalendaryController.AddCalendary(StoreHood.Api.ViewModels.CalendaryModel)">
+            <summary>
+            Add new Calendary
+            </summary>
+            <param name="calendary"></param>
+            <returns>Calendary</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.CalendaryController.DeleteCalendary(System.Int32)">
+            <summary>
+            Delete Calendary
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.CalendaryController.UpdateCalendary(StoreHood.Api.ViewModels.CalendaryModel)">
+            <summary>
+            Update Calendary
+            </summary>
+            <param name="Calendary"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.CalendaryController.GetCalendaryAll">
+            <summary>
+            Get All Calendarys
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.CalendaryController.GetCalendary(System.Int32)">
+            <summary>
+            Get USER by ID.
+            </summary>
+            <param name="id"></param>
+            <returns>Calendary</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.CategoriesController.#ctor(StoreHood.Api.Application.Contracts.ICategoriesService)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="categoriesService"></param>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.CategoriesController.AddCategories(StoreHood.Api.ViewModels.CategoriesModel)">
+            <summary>
+            Add new Categories
+            </summary>
+            <param name="categories"></param>
+            <returns>Categories</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.CategoriesController.DeleteCategories(System.Int32)">
+            <summary>
+            Delete Categories
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.CategoriesController.UpdateCategories(StoreHood.Api.ViewModels.CategoriesModel)">
+            <summary>
+            Update Categories
+            </summary>
+            <param name="Categories"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.CategoriesController.GetCategoriesAll">
+            <summary>
+            Get All Categoriess
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.CategoriesController.GetCategories(System.Int32)">
+            <summary>
+            Get USER by ID.
+            </summary>
+            <param name="id"></param>
+            <returns>Categories</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.DealerController.#ctor(StoreHood.Api.Application.Contracts.IDealerService)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="dealerService"></param>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.DealerController.AddDealer(StoreHood.Api.ViewModels.DealerModel)">
+            <summary>
+            Add new Dealer
+            </summary>
+            <param name="dealer"></param>
+            <returns>Dealer</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.DealerController.DeleteDealer(System.Int32)">
+            <summary>
+            Delete Dealer
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.DealerController.UpdateDealer(StoreHood.Api.ViewModels.DealerModel)">
+            <summary>
+            Update Dealer
+            </summary>
+            <param name="Dealer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.DealerController.GetDealerAll">
+            <summary>
+            Get All Dealers
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.DealerController.GetDealer(System.Int32)">
+            <summary>
+            Get USER by ID.
+            </summary>
+            <param name="id"></param>
+            <returns>Dealer</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.OpinionController.#ctor(StoreHood.Api.Application.Contracts.IOpinionService)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="opinionService"></param>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.OpinionController.AddOpinion(StoreHood.Api.ViewModels.OpinionModel)">
+            <summary>
+            Add new Opinion
+            </summary>
+            <param name="opinion"></param>
+            <returns>Opinion</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.OpinionController.DeleteOpinion(System.Int32)">
+            <summary>
+            Delete Opinion
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.OpinionController.UpdateOpinion(StoreHood.Api.ViewModels.OpinionModel)">
+            <summary>
+            Update Opinion
+            </summary>
+            <param name="Opinion"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.OpinionController.GetOpinionAll">
+            <summary>
+            Get All Opinions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.OpinionController.GetOpinion(System.Int32)">
+            <summary>
+            Get USER by ID.
+            </summary>
+            <param name="id"></param>
+            <returns>Opinion</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ProductController.#ctor(StoreHood.Api.Application.Contracts.IProductService)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="productService"></param>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ProductController.AddProduct(StoreHood.Api.ViewModels.ProductModel)">
+            <summary>
+            Add new Product
+            </summary>
+            <param name="product"></param>
+            <returns>Product</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ProductController.DeleteProduct(System.Int32)">
+            <summary>
+            Delete Product
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ProductController.UpdateProduct(StoreHood.Api.ViewModels.ProductModel)">
+            <summary>
+            Update Product
+            </summary>
+            <param name="Product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ProductController.GetProductAll">
+            <summary>
+            Get All Products
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ProductController.GetProduct(System.Int32)">
+            <summary>
+            Get USER by ID.
+            </summary>
+            <param name="id"></param>
+            <returns>Product</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ProfessionalController.#ctor(StoreHood.Api.Application.Contracts.IProfessionalService)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="professionalService"></param>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ProfessionalController.AddProfessional(StoreHood.Api.ViewModels.ProfessionalModel)">
+            <summary>
+            Add new Professional
+            </summary>
+            <param name="professional"></param>
+            <returns>Professional</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ProfessionalController.DeleteProfessional(System.Int32)">
+            <summary>
+            Delete Professional
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ProfessionalController.UpdateProfessional(StoreHood.Api.ViewModels.ProfessionalModel)">
+            <summary>
+            Update Professional
+            </summary>
+            <param name="Professional"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ProfessionalController.GetProfessionalAll">
+            <summary>
+            Get All Professionals
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ProfessionalController.GetProfessional(System.Int32)">
+            <summary>
+            Get USER by ID.
+            </summary>
+            <param name="id"></param>
+            <returns>Professional</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ServiceController.#ctor(StoreHood.Api.Application.Contracts.IServiceService)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="ServiceService"></param>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ServiceController.AddService(StoreHood.Api.ViewModels.ServiceModel)">
+            <summary>
+            Add new Service
+            </summary>
+            <param name="shop"></param>
+            <returns>Service</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ServiceController.DeleteService(System.Int32)">
+            <summary>
+            Delete Service
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ServiceController.UpdateService(StoreHood.Api.ViewModels.ServiceModel)">
+            <summary>
+            Update Service
+            </summary>
+            <param name="Service"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ServiceController.GetServiceAll">
+            <summary>
+            Get All Services
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ServiceController.GetService(System.Int32)">
+            <summary>
+            Get USER by ID.
+            </summary>
+            <param name="id"></param>
+            <returns>Service</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ShopController.#ctor(StoreHood.Api.Application.Contracts.IShopService)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="ShopService"></param>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ShopController.AddShop(StoreHood.Api.ViewModels.ShopModel)">
+            <summary>
+            Add new Shop
+            </summary>
+            <param name="shop"></param>
+            <returns>Shop</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ShopController.DeleteShop(System.Int32)">
+            <summary>
+            Delete Shop
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ShopController.UpdateShop(StoreHood.Api.ViewModels.ShopModel)">
+            <summary>
+            Update Shop
+            </summary>
+            <param name="Shop"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ShopController.GetShopAll">
+            <summary>
+            Get All Shops
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.ShopController.GetShop(System.Int32)">
+            <summary>
+            Get USER by ID.
+            </summary>
+            <param name="id"></param>
+            <returns>Shop</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.UserController.#ctor(StoreHood.Api.Application.Contracts.IUserService)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="userService"></param>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.UserController.AddUser(StoreHood.Api.ViewModels.UserModel)">
+            <summary>
+            Add new user
+            </summary>
+            <param name="user"></param>
+            <returns>User</returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.UserController.DeleteUser(System.Int32)">
+            <summary>
+            Delete User
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.UserController.UpdateUser(StoreHood.Api.ViewModels.UserModel)">
+            <summary>
+            Update User
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.UserController.GetUserAll">
+            <summary>
+            Get All Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StoreHood.Api.Controllers.UserController.GetUser(System.Int32)">
+            <summary>
+            Get USER by ID.
+            </summary>
+            <param name="id"></param>
+            <returns>User</returns>
+        </member>
+        <member name="T:StoreHood.Api.ViewModels.ActivityModel">
+            <summary>
+            Son las estructuras que nos llegarán para las peticiones.
+            </summary>
+        </member>
+        <member name="T:StoreHood.Api.ViewModels.CalendaryModel">
+            <summary>
+            Son las estructuras que nos llegarán para las peticiones.
+            </summary>
+        </member>
+        <member name="T:StoreHood.Api.ViewModels.CategoriesModel">
+            <summary>
+            Son las estructuras que nos llegarán para las peticiones.
+            </summary>
+        </member>
+        <member name="T:StoreHood.Api.ViewModels.DealerModel">
+            <summary>
+            Son las estructuras que nos llegarán para las peticiones.
+            </summary>
+        </member>
+        <member name="T:StoreHood.Api.ViewModels.OpinionModel">
+            <summary>
+            Son las estructuras que nos llegarán para las peticiones.
+            </summary>
+        </member>
+        <member name="T:StoreHood.Api.ViewModels.ProductModel">
+            <summary>
+            Son las estructuras que nos llegarán para las peticiones.
+            </summary>
+        </member>
+        <member name="T:StoreHood.Api.ViewModels.ProfessionalModel">
+            <summary>
+            Son las estructuras que nos llegarán para las peticiones.
+            </summary>
+        </member>
+        <member name="T:StoreHood.Api.ViewModels.ServiceModel">
+            <summary>
+            Son las estructuras que nos llegarán para las peticiones.
+            </summary>
+        </member>
+        <member name="T:StoreHood.Api.ViewModels.ShopModel">
+            <summary>
+            Son las estructuras que nos llegarán para las peticiones.
+            </summary>
+        </member>
+        <member name="T:StoreHood.Api.ViewModels.UserModel">
+            <summary>
+            Son las estructuras que nos llegarán para las peticiones.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -4,4 +4,15 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StoreHood.Api.Application.Contracts\StoreHood.Api.Application.Contracts.csproj" />
+    <ProjectReference Include="..\StoreHood.Api.Business\StoreHood.Api.Business.csproj" />
+    <ProjectReference Include="..\StoreHood.Api.DataAccess.Contracts\StoreHood.Api.DataAccess.Contracts.csproj" />
+    <ProjectReference Include="..\StoreHood.Api.DataAccess\StoreHood.Api.DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Mappers\" />
+  </ItemGroup>
+
 </Project>

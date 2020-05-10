@@ -12,7 +12,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using StoreHood.Api.Config;
+using StoreHood.Api.CrossCutting;
 using StoreHood.Api.DataAccess;
+using StoreHood.Api.DataAccess.Contracts;
 
 namespace StoreHoodApi
 {
@@ -28,10 +31,16 @@ namespace StoreHoodApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IStoreHoodDBContext, StoreHoodDBContext>();
             services.AddDbContext<StoreHoodDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("shdb")));
-          
+            
+            //Podríamos crear varios registros de servicios, por ejemplo si las cadenas de conexion fueran distintas, las podríamos pasar como parámetro.
+            IocRegister.AddRegistration(services);
+            SwaggerConfig.AddRegistration(services);
+            
             //Esta etiqueta siempre debe ser la última.
             services.AddControllers();
+            //services.AddMvc();
 
         }
       
@@ -44,6 +53,9 @@ namespace StoreHoodApi
                 app.UseDeveloperExceptionPage();
             }
 
+            SwaggerConfig.AddRegistration(app);
+            //app.UseMvc();
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -54,6 +66,8 @@ namespace StoreHoodApi
             {
                 endpoints.MapControllers();
             });
+            
+            
         }
     }
 }
