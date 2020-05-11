@@ -14,6 +14,8 @@ namespace StoreHood.Api.DataAccess.EntityConfig
             entityBuilder.ToTable("Users");
             entityBuilder.HasKey(x => x.Id);
             entityBuilder.Property(x => x.Id).IsRequired();
+            
+            entityBuilder.HasMany(x => x.Opinions).WithOne(x => x.User);
         }
     }
 }

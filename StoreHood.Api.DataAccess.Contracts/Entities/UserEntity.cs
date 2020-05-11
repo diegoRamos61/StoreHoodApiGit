@@ -16,12 +16,16 @@ namespace StoreHood.Api.DataAccess.Contracts.Entities
         public string Province { get; set; }
         public string Country { get; set; }
         public bool Active { get; set; }
-        
+               
         // Campos de Auditoría.
         public string IpCreate { get; set; }
         public DateTime DateCreate  { get; set; }
         public string IpUpdate { get; set; }
         public DateTime DateUpdate { get; set; }
 
+        /* Navigation Properties
+         * Un usuario tendrá una 0 o muchas opiniones realizadas.
+         */
+        public virtual ICollection<OpinionEntity> Opinions { get; set; }
     }
 }

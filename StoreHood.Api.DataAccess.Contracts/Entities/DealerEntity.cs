@@ -20,7 +20,9 @@ namespace StoreHood.Api.DataAccess.Contracts.Entities
         public string IpUpdate { get; set; }
         public DateTime DateUpdate { get; set; }
 
-        //Un Comerciante puede tener 0 o muchas comercios asociados.
+        /* Navigation Properties
+         * Un Comerciante puede tener 0 o muchas comercios asociados.
+         */
         public virtual ICollection<ShopEntity> Shops { get; set; }
     }
 }

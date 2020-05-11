@@ -23,22 +23,27 @@ namespace StoreHood.Api.DataAccess.Contracts.Entities
         public string Facebook { get; set; }
         public string Instagram { get; set; }
         
-        public int IdProfessional { get; set; }
-        public int IdCalendary { get; set; }
-        //Tendrá asociado un profesional.
-        public virtual ProfessionalEntity Professional { get; set; }
-        //Tendrá varios servicios a ofrecer.
-        public virtual ICollection<ServiceEntity> Services { get; set; }
-        public virtual ICollection<OpinionEntity> Opinions { get; set; }
-        //Tendrá una lista de categorias.
-        public virtual ICollection<CategoriesEntity> Categories { get; set; }
-        // Un calendario asociado de la provincia al que pertenezca
-        public virtual CalendaryEntity Calendary { get; set; }
+        //Foreing key.
+        public int ProfessionalId { get; set; }
+        public int? CalendaryId { get; set; }
 
         // Campos de Auditoría.
         public string IpCreate { get; set; }
         public DateTime DateCreate { get; set; }
         public string IpUpdate { get; set; }
         public DateTime DateUpdate { get; set; }
+
+
+        /* Navigation Properties
+         * Una Actividad pertenece a un único profesional.
+         * Una professional tendrá 0 o muchas actividades que desarrollar.
+         * Una actividad tendrá un calendario asociado. (Puede ser nullable)
+         */
+
+        //Tendrá asociado un profesional.
+        public virtual ProfessionalEntity Professional { get; set; }
+        public virtual CalendaryEntity Calendary { get; set; }
+        public virtual ICollection<ServiceEntity> Services { get; set; }
+       
     }
 }

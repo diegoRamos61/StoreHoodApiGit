@@ -23,7 +23,7 @@ namespace StoreHood.Api.DataAccess.Mappers
                 Instagram = dto.Instagram,
                 Latitude = dto.Latitude,
                 Longitude = dto.Longitude,
-                IdDealer = dto.IdDealer,
+                DealerId = dto.IdDealer,
                 CloseHour = dto.CloseHour,
                 OpenHour = dto.OpenHour                
             //No pasaríamos entidades enteras, si no los ID de otras entidades.
@@ -43,7 +43,7 @@ namespace StoreHood.Api.DataAccess.Mappers
                 Instagram = entity.Instagram,
                 Latitude = entity.Latitude,
                 Longitude = entity.Longitude,
-                IdDealer = entity.IdDealer,
+                IdDealer = entity.DealerId,
                 CloseHour = entity.CloseHour,
                 OpenHour = entity.OpenHour                
             };

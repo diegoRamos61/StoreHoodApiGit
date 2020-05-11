@@ -136,7 +136,7 @@ namespace StoreHood.Api.DataAccess.Repositories
             var entity = await GetById(idEntity);
             
             entity.Calendary = calendary;
-            entity.IdCalendary = calendary.Id;
+            entity.CalendaryId = calendary.Id;
 
             return entity;
         }
@@ -146,7 +146,7 @@ namespace StoreHood.Api.DataAccess.Repositories
             var entity = await GetById(idEntity);
 
             entity.Dealer = dealer;
-            entity.IdDealer = dealer.Id;
+            entity.DealerId = dealer.Id;
 
             return entity;
         }

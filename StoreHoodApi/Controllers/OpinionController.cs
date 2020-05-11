@@ -89,7 +89,7 @@ namespace StoreHood.Api.Controllers
         }
 
         /// <summary>
-        /// Get USER by ID.
+        /// Get Opinion by ID.
         /// </summary>
         /// <param name="id"></param>
         /// <returns>Opinion</returns>

@@ -12,8 +12,5 @@ namespace StoreHood.Api.DataAccess.Contracts.Entities
         // Por si fuera necesario actualizar la categoría un producto y no se desease actualizar sino darla de baja y sustituirla por otra.
         public bool Active { get; set; }
 
-        public virtual ICollection<ProductEntity> Products { get; set; }
-        public virtual ICollection<ServiceEntity> Services { get; set; }
-
     }
 }

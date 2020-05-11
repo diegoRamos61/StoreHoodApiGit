@@ -20,7 +20,9 @@ namespace StoreHood.Api.DataAccess.Contracts.Entities
         public string IpUpdate { get; set; }
         public DateTime DateUpdate { get; set; }
 
-        //Un profesional puede tener 0 o muchas actividades asociadas.
+        /* Navigation Properties
+         * Un profesional puede tener 0 o muchas actividades asociadas.        
+         */        
         public virtual ICollection<ActivityEntity> Activities  { get; set; }
     }
 }

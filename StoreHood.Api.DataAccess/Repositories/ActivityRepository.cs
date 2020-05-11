@@ -145,7 +145,7 @@ namespace StoreHood.Api.DataAccess.Repositories
             var entity = await GetById(idEntity);
 
             entity.Calendary = calendary;
-            entity.IdCalendary = calendary.Id;
+            entity.CalendaryId = calendary.Id;
 
             _storeHoodDBContext.Activities.Update(entity);
 
@@ -170,7 +170,7 @@ namespace StoreHood.Api.DataAccess.Repositories
 
             return entity;
         }
-
+        /*
         public async Task<ActivityEntity> AddOpinions(int idEntity, ICollection<OpinionEntity> opinions)
         {
             var entity = await GetById(idEntity);
@@ -202,7 +202,7 @@ namespace StoreHood.Api.DataAccess.Repositories
 
             return entity;
         }
-
+        */
         #endregion
 
     }

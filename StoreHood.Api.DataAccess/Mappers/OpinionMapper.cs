@@ -14,7 +14,7 @@ namespace StoreHood.Api.DataAccess.Mappers
                 Id = dto.Id,
                 Description = dto.Description,
                 Rank = dto.Rank,
-                IdUser = dto.IdUser                
+                UserId = dto.IdUser                
             };
         }
 
@@ -25,7 +25,7 @@ namespace StoreHood.Api.DataAccess.Mappers
                 Id = entity.Id,
                 Description = entity.Description,
                 Rank = entity.Rank,
-                IdUser = entity.IdUser
+                IdUser = entity.UserId
             };
         }
 

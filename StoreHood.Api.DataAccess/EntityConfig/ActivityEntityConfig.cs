@@ -19,7 +19,7 @@ namespace StoreHood.Api.DataAccess.EntityConfig
             //Una actividad tiene un profesional y este puede dedicarse a varias actividades.
             entityBuilder.HasOne(x => x.Professional).WithMany(x => x.Activities);
             //Un calendario lo tiene muchas actividades y un mismo calendario lo tendrá varias actividades.
-            entityBuilder.HasOne(x => x.Calendary).WithMany(x => x.Activities);
+            //entityBuilder.HasOne(x => x.Calendary).WithMany(x => x.Activities);
             //Una actividad tiene muchos servicios y un servicio solo será ofrecído por una actividad.
             entityBuilder.HasMany(x => x.Services).WithOne(x => x.Activity);
       

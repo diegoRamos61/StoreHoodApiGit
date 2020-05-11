@@ -16,10 +16,13 @@ namespace StoreHood.Api.DataAccess.EntityConfig
             entityBuilder.HasKey(x => x.Id);
             entityBuilder.Property(x => x.Id).IsRequired();
 
+            /*
             //Un calendario lo tendrán asignado muchas tiendas y estas solo uno.
             entityBuilder.HasMany(x => x.Shops).WithOne(x => x.Calendary);
             //Un calendario lo tendrán asignado muchas Actividades y estas solo uno.
             entityBuilder.HasMany(x => x.Activities).WithOne(x => x.Calendary);
+
+            */
 
         }
     }
